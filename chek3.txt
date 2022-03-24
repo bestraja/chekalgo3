@@ -1,0 +1,39 @@
+
+1/////////
+
+PROCEDURE dot_product(v1,v2,n)
+VAR
+    ps:arry of integer[n];
+ort:boolean;
+BEGIN
+    
+for(i o to n )do
+   for(j o to n )do
+   ps[i]:=v1[i]*v2[j];
+
+for(i o to n )do
+if(ps[i]==0)
+ort=true;
+else
+ort=false
+END
+End
+
+
+2/// Algorithme product_tow_arry
+var 
+v1,v2:arry of integer[50];
+i,n:integer;
+Begin
+REPEAT
+write('donner les nobmre des cases de tableau tab1');
+ Read(n);
+ UNTIL(n<>0)
+for(i o to n )do
+write('dooner une valeur');
+read (v1[i]);
+for(j o to n )do
+write('dooner une valeur');
+read( v2[j]);
+dot_product(v1,v2,n);
+End
